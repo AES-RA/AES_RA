@@ -33,6 +33,14 @@ Finaly, we have the subgroups corresponding with the traces and the metadata. An
 
 ![picture](misc/SCHEME.jpg)
 
+The number of traces (N in the figure above) in each subgroup is the following:
+- Piñata (Unprotected): 60000 profiling traces, 30000 attack traces
+- Piñata (Masked Scheme 1): 60000 profiling traces, 30000 attack traces
+- Piñata (Masked Scheme 2): 60000 profiling traces, 30000 attack traces
+- STM32F4 (Unprotected): 60000 profiling traces, 30000 attack traces
+- STM32F4 (Masked Scheme 1): 60000 profiling traces, 30000 attack traces
+- STM32F4 (Masked Scheme 2): 60000 profiling traces, 30000 attack traces
+
 
 ## References
 <a id="1">[1]</a> 
