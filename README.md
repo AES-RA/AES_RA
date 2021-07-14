@@ -12,10 +12,10 @@ The STM32F411E-DISCO is a development board with an STM32F411VE high-performance
 ## AES Implementations
 - **Unprotected AES:** Typical AES-128 (in ECB mode) software implementation taken [from](https://github.com/kokke/tiny-AES-c)
 - **Masked Scheme 1:** A modification of the previous one which matches the same masking method described in [[1]](#1) (Masked Lookup Table). In this implementation, the the output mask of the SBox operation is removed after each 1-Byte lookup and hence we see a clear correlation of the mask in the SBox time window. Below is the pseudocode of this implementation:
-![picture](ms1.jpg)
+![picture](misc/ms1.jpg)
 
 - **Masked Scheme 2:** A modification of the previous one, but this time the output mask is removed after the MixColumns operation. This means that, unlike in the previous scheme, the output mask does not leak during the SBox computation. Below is the pseudocode of this implementation:
-![picture](ms2.jpg)
+![picture](misc/ms2.jpg)
 
 ## Dataset Organization
 The AES_RA dataset is stored in a single file in HDF5 format. This file has two groups (PINATA and STM32F4), one for each of the two devices. 
@@ -23,7 +23,7 @@ Each group has three subgroups, corresponding with each one of the three conside
 In turn, each implementation is divided into the Random Key set (Profiling) and the Fixed key set (Attack). 
 Finaly, we have the subgroups corresponding with the traces and the metadata. An organisational chart is shown in the following figure:
 
-![picture](AES_RA_SCHEME.jpg)
+![picture](misc/AES_RA_SCHEME.jpg)
 
 
 ## References
