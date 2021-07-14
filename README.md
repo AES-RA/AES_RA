@@ -10,7 +10,7 @@ This dataset contains Power/EM traces from two different boards operating severa
 The [STM32F411E-DISCO](https://www.st.com/en/microcontrollers-microprocessors/stm32f411ve.html) is a development board with an STM32F411VE high-performance Arm Cortex -M4 32-bit RISC microcontroller working at 100 MHz. This board (STM32F411E-DISCO) is similar to Piñata (microcontrollers are from the same family), and uses exactly the same code. We measure the power consumption of the board during the AES encryptions with a Langer EM probe over a decoupling capacitor (C38) attached to the oscilloscope (LeCroy Waverunner 9104), wich again is GPIO-triggered by the microcontroller. Each power trace consists of 1225 samples (1500 and 1800 for the masked implementations 1 and 2 respectively). The nature of the acquisition (capacitor EM probe) makes these traces much noisier than the previous ones and therefore more challenging.
 
 ## AES Implementations
-- **Unprotected AES:** Typical AES-128 (in ECB mode) software implementation taken [from](https://github.com/kokke/tiny-AES-c)
+- **Unprotected AES:** Typical AES-128 (in ECB mode) software implementation taken from [[2]](#2)
 - **Masked Scheme 1:** A modification of the previous one which matches the same masking method described in [[1]](#1) (Masked Lookup Table). In this implementation, the the output mask of the SBox operation is removed after each 1-Byte lookup and hence we see a clear correlation of the mask in the SBox time window. Below is the pseudocode of this implementation:
 
 ![picture](misc/ms1.jpg)
@@ -33,3 +33,13 @@ Finaly, we have the subgroups corresponding with the traces and the metadata. An
 S. Mangard, E. Oswald, T. Popp,
 Power Analysis Attacks: Revealing the Secrets of Smart Cards.,
 Springer, 2007.
+
+<a id="2">[2]</a>
+kokke
+Tiny AES in C
+https://github.com/kokke/tiny-AES-c
+
+
+
+
+
