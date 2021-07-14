@@ -1,5 +1,5 @@
 # The *AES_RA* Dataset
-This dataset contains Power/EM traces from two different boards operating several AES implementations. More specifically, two different embedded systems which use microcontrollers from the same family: power consumption traces from the Piñata board and capacitor EM power traces from the STM32F411E-Discovery Board. With each device, we capture traces from three AES implementations: an unprotected software AES and two different masking schemes, resulting in six different setups. 
+This dataset contains Power/EM traces from two different boards operating several AES implementations. More specifically, two different embedded systems which use microcontrollers from the same family: power consumption traces from the Piñata board and capacitor EM power traces from the STM32F411E-Discovery Board. With each device, we capture traces from three AES implementations: an unprotected software AES and two different masking schemes, resulting in six different setups. The motivation is to provide noisy real-world traces collected from actual devices on the field.
 
 ## Download link
 The dataset can be downloaded [here](https://drive.google.com/)
