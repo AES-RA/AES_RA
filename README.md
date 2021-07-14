@@ -12,7 +12,7 @@ The dataset can be downloaded [here](https://drive.google.com/)
 The [STM32F411E-DISCO](https://www.st.com/en/microcontrollers-microprocessors/stm32f411ve.html) is a development board with an STM32F411VE high-performance Arm Cortex -M4 32-bit RISC microcontroller working at 100 MHz. This board (STM32F411E-DISCO) is similar to Piñata (microcontrollers are from the same family), and uses exactly the same code. We measure the power consumption of the board during the AES encryptions with a Langer EM probe over a decoupling capacitor (C38) attached to the oscilloscope (LeCroy Waverunner 9104), wich again is GPIO-triggered by the microcontroller. Each power trace consists of 1225 samples (1500 and 1800 for the masked implementations 1 and 2 respectively). The nature of the acquisition (capacitor EM probe) makes these traces much noisier than the previous ones and therefore more challenging.
 
 ## AES Implementations
-### Unprotected AES:** 
+### Unprotected AES:
 Typical AES-128 (in ECB mode) software implementation taken from [[2]](#2).
 
 ### Masked Scheme 1
