@@ -9,4 +9,4 @@ Each group has three subgroups, corresponding with each one of the three conside
 In turn, each implementation is divided into the Random Key set (Profiling) and the Fixed key set (Attack). 
 Finaly, we have the subgroups corresponding with the traces and the metadata. An organisational chart is shown in the following figure:
 
-![picture](img/Scheme.jpg)
+![picture](AES_RA_SCHEME.jpg)
