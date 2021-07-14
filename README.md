@@ -36,10 +36,10 @@ Finaly, we have the subgroups corresponding with the traces and the metadata. An
 The number of traces (N in the figure above) in each subgroup is the following:
 - Piñata (Unprotected): 60000 profiling traces, 30000 attack traces
 - Piñata (Masked Scheme 1): 60000 profiling traces, 30000 attack traces
-- Piñata (Masked Scheme 2): 60000 profiling traces, 30000 attack traces
-- STM32F4 (Unprotected): 60000 profiling traces, 30000 attack traces
-- STM32F4 (Masked Scheme 1): 60000 profiling traces, 30000 attack traces
-- STM32F4 (Masked Scheme 2): 60000 profiling traces, 30000 attack traces
+- Piñata (Masked Scheme 2): 100000 profiling traces, 50000 attack traces
+- STM32F4 (Unprotected): 100000 profiling traces, 50000 attack traces
+- STM32F4 (Masked Scheme 1): 100000 profiling traces, 50000 attack traces
+- STM32F4 (Masked Scheme 2): 200000 profiling traces, 100000 attack traces
 
 
 ## References
