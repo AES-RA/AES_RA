@@ -13,7 +13,7 @@ The [STM32F411E-DISCO](https://www.st.com/en/microcontrollers-microprocessors/st
 
 ## AES Implementations
 ### Unprotected AES:
-Typical AES-128 (in ECB mode) software implementation taken from [[2]](#2).
+Typical AES-128 software implementation in ECB mode, taken from [[2]](#2).
 
 ### Masked Scheme 1
 A modification of the previous one which matches the same masking method described in [[1]](#1) (Masked Lookup Table). In this implementation, the the output mask of the SBox operation is removed after each 1-Byte lookup and hence we see a clear correlation of the mask in the SBox time window. Below is the pseudocode of this implementation:
