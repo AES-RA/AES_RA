@@ -29,7 +29,7 @@ A modification of the previous one, but this time the output mask is removed aft
 The AES_RA dataset is stored in a single file in HDF5 format. This file has two groups (PINATA and STM32F4), one for each of the two devices. 
 Each group has three subgroups, corresponding with each one of the three considered AES implementations. 
 In turn, each implementation is divided into the Random Key set (Profiling) and the Fixed key set (Attack). 
-Finaly, we have the subgroups corresponding with the traces and the metadata: Plaintext, Ciphertext, Key and Output mask (in masked implementations). An organisational chart is shown in the following figure:
+Finaly, we have the subgroups corresponding with the traces and the metadata: Plaintext, Ciphertext, Key and Input and Output SBox mask (in masked implementations). An organisational chart is shown in the following figure:
 
 ![picture](misc/SCHEME.jpg)
 
