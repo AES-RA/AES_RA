@@ -2,7 +2,7 @@
 This dataset contains Power/EM traces from two different boards operating several AES implementations. More specifically, two different embedded systems which use microcontrollers from the same family: power consumption traces from the Piñata board and capacitor EM power traces from the STM32F411E-Discovery Board. With each device, we capture traces from three AES implementations: an unprotected software AES and two different masking schemes, resulting in six different setups. The motivation is to provide real-world traces collected from actual devices on the field.
 
 ## Download link
-The dataset can be downloaded [here](https://drive.google.com/file/d/1XVT7-Um2Z_0VdTjb8XyrSEA-j5BvfznS/view?usp=sharing)
+The dataset can be downloaded [here](https://drive.google.com/file/d/1b3hDoqjoz3nsFieTSsv6v3hOKUdgGvug/view?usp=sharing)
 
 ## Device(s) under test
 ### Piñata board
@@ -29,7 +29,7 @@ A modification of the previous one, but this time the output mask is removed aft
 The AES_RA dataset is stored in a single file in HDF5 format. This file has two groups (PINATA and STM32F4), one for each of the two devices. 
 Each group has three subgroups, corresponding with each one of the three considered AES implementations. 
 In turn, each implementation is divided into the Random Key set (Profiling) and the Fixed key set (Attack). 
-Finaly, we have the subgroups corresponding with the traces and the metadata: Plaintext, Ciphertext, Key and Input and Output SBox mask (in masked implementations). An organisational chart is shown in the following figure:
+Finaly, we have the subgroups corresponding with the traces, labels (unmasked Sbox output) and the metadata: Plaintext, Ciphertext, Key and Input and Output SBox mask (in masked implementations). An organisational chart is shown in the following figure:
 
 ![picture](misc/SCHEME.jpg)
 
