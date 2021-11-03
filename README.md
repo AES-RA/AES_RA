@@ -31,7 +31,7 @@ Each group has three subgroups, corresponding with each one of the three conside
 In turn, each implementation is divided into the Random Key set (Profiling) and the Fixed key set (Attack). 
 Finaly, we have the subgroups corresponding with the traces, labels (unmasked Sbox output) and the metadata: Plaintext, Ciphertext, Key and Input and Output SBox mask (in masked implementations). An organisational chart is shown in the following figure:
 
-![picture](misc/SCHEME.jpg)
+![picture](misc/AES_RA_SCHEME.jpg)
 
 The number of traces (N in the figure above) in each subgroup is the following:
 - Piñata (Unprotected): 150000 profiling traces, 50000 attack traces
